@@ -4,7 +4,7 @@ public class Ch14_Lec7_Finally {
     public static int problem(){
         try {
             int a = 56;
-            int b = 0;
+            int b = 6;
             int c = a/b;
             return c ;
         }
