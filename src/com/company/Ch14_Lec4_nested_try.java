@@ -10,7 +10,7 @@ public class Ch14_Lec4_nested_try {
             System.out.print("Enter the index number: ");
             int index = sc.nextInt();
             try {
-                System.out.println("This is Nested try catch lecture...");
+                System.out.println("This is Nested try catch block...");
                 try{
                     System.out.println("Number at entered index is: "+marks[index]);
                     big = false;
