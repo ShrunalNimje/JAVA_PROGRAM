@@ -1,33 +1,33 @@
 package com.company;
 class InvalidIpException extends Exception{
-    public String tostring(){
+    public String toString(){
         return "Entered input is invalid \n Please check before proceed...";
     }
-    public String tomessage(){
+    public String toMessage(){
         return "To message...";
     }
 }
 class ZeroIpException extends Exception{
-    public String tostring(){
+    public String toString(){
         return "You cannot divide by 0(Zero)\n Please check before proceed...";
     }
-    public String tomessage(){
+    public String toMessage(){
         return "To message...";
     }
 }
 class MaxMultiplierException extends Exception{
-    public String tostring(){
+    public String toString(){
         return "You cannot multiply greater than 7000 value\n Please check before proceed...";
     }
-    public String tomessage(){
+    public String toMessage(){
         return "To message...";
     }
 }
 class MaxIpException extends Exception{
-    public String tostring(){
-        return "You cannot get number greater than 100000 \n Please check before proceed...";
+    public String toString(){
+        return "You cannot get number greater than 1,00,000 \n Please check before proceed...";
     }
-    public String tomessage(){
+    public String toMessage(){
         return "To message...";
     }
 }
@@ -50,21 +50,27 @@ class MyCustomCalculator{
         }
         return a-b;
     }
-    public double multiplication(double a, double b) throws InvalidIpException, MaxMultiplierException{
+    public double multiplication(double a, double b) throws InvalidIpException, MaxMultiplierException, MaxIpException{
         if (a>7000 || b>7000){
             throw new MaxMultiplierException();
+        }
+        if (a>100000 || b>100000){
+            throw new MaxIpException();
         }
         if (a==0 && b==0){
             throw new InvalidIpException();
         }
         return a*b;
     }
-    public double division(double a, double b) throws InvalidIpException, ZeroIpException{
+    public double division(double a, double b) throws InvalidIpException, ZeroIpException, MaxIpException{
         if (b==0){
             throw new ZeroIpException();
         }
         if (a==0 && b==0){
             throw new InvalidIpException();
+        }
+        if (a>100000 || b>100000){
+            throw new MaxIpException();
         }
         return a/b;
     }
@@ -86,12 +92,14 @@ public class EX6 {
          */
 
         MyCustomCalculator calc = new MyCustomCalculator();
-        System.out.println("Addition is : " + calc.addition(34.6, 2500));
-        System.out.println("Division is : " + calc.division(23.6, 10));
-        System.out.println("Multiplication is : " + calc.multiplication(34,7567));
+        // System.out.println("Addition is : " + calc.addition(34, 250000));
+        // System.out.println("Division is : " + calc.division(23.6, 0));
+        // System.out.println("Multiplication is : " + calc.multiplication(34,7567));
         System.out.println("Subtraction is : " + calc.subtraction(102500,2500));
+
         System.out.println("The program has been ended...");
 
+        // here I throw an all custom Exception by creating an object of MyCustomCalculator and perform all the operations...
 
     }
 }
