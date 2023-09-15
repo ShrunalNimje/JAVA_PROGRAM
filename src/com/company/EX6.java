@@ -1,5 +1,4 @@
 package com.company;
-import java.util.Scanner;
 class InvalidIpException extends Exception{
     public String tostring(){
         return "Entered input is invalid \n Please check before proceed...";
