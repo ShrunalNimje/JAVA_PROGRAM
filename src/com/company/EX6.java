@@ -86,10 +86,10 @@ public class EX6 {
          */
 
         MyCustomCalculator calc = new MyCustomCalculator();
-        System.out.println("Addition is : " + calc.addition(34.6, 67));
-        System.out.println("Division is : " + calc.division(23.6, 2));
-        System.out.println("Multiplication is : " + calc.multiplication(34,4567));
-        System.out.println("Subtraction is : " + calc.subtraction(234,0));
+        System.out.println("Addition is : " + calc.addition(34.6, 2500));
+        System.out.println("Division is : " + calc.division(23.6, 10));
+        System.out.println("Multiplication is : " + calc.multiplication(34,7567));
+        System.out.println("Subtraction is : " + calc.subtraction(102500,2500));
         System.out.println("The program has been ended...");
 
 
