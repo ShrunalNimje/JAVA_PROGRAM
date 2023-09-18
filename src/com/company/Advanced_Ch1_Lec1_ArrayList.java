@@ -27,8 +27,8 @@ public class Advanced_Ch1_Lec1_ArrayList {
         System.out.println("After adding elements of ArrayList 2 is : " + AI);
 
         // Second method to print ArrayList...
-        for (int i = 0; i<AI.size();i++){
-            System.out.println(AI.get(i));
+        for (Integer e: AI){
+            System.out.println(e);
         }
 
         // Removing an element
