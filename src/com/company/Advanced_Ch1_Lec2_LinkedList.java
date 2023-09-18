@@ -3,7 +3,6 @@ import java.util.*;
 
 public class Advanced_Ch1_Lec2_LinkedList {
     public static void main(String[] args) {
-
         LinkedList<Integer> ll1 = new LinkedList<>();
         LinkedList<Integer> ll2 = new LinkedList<>();
 
@@ -51,6 +50,12 @@ public class Advanced_Ch1_Lec2_LinkedList {
         ll2.clear();
         System.out.println("After clear all the element of ll1 : "+ll1);
         System.out.println("After clear all the element of ll2 : "+ll2);
+
+        /*
+        Although ArrayList & LinkedList both implement the List interface and have the same methods, it is important to understand when to use which one.
+        The insertion & deletion can be done in constant time in Linked List, so it is best to use the linked list when you need to add or remove elements frequently.
+                Use ArrayList when you want to access the random elements frequently, as it can’t be done in a linked list in constant time.
+         */
 
     }
 }
