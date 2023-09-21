@@ -26,5 +26,7 @@ public class Advanced_Ch1_Lec5_DateTime {
         System.out.println(d2.getYear());
         int ct = d1.compareTo(d2);
         System.out.println(ct);     // --> return -1 if d1 & d2 not equals...
+
+        // Maximum methods are deprecated of Date class after java 8 update...
     }
 }
