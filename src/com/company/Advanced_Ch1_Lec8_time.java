@@ -31,19 +31,19 @@ public class Advanced_Ch1_Lec8_time {
         LocalTime lt = LocalTime.now();
         System.out.println(lt);
 
-        // The time of noon in the middle of the day, '12:00'
+        // The time of noon in the middle of the day,"12:00"
         LocalTime lt1 = LocalTime.NOON;
         System.out.println(lt1);
 
-        // The time of midnight at the start of the day, '00:00'.
+        // The time of midnight at the start of the day, "00:00"
         LocalTime lt2 = LocalTime.MIDNIGHT;
         System.out.println(lt2);
 
-        // The minimum supported LocalTime, '00:00'. This is the time of midnight at the start of the day
+        // The minimum supported LocalTime, "00:00". This is the time of midnight at the start of the day
         LocalTime lt3 = LocalTime.MIN;
         System.out.println(lt3);
 
-        // The maximum supported LocalTime, '23:59:59.999999999'. This is the time just before midnight at the end of the day
+        // The maximum supported LocalTime, "23:59:59.999999999". This is the time just before midnight at the end of the day
         LocalTime lt4 = LocalTime.MAX;
         System.out.println(lt4);
 
