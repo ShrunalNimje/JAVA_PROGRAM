@@ -1,5 +1,4 @@
 package com.company;
-import java.util.Date;
 
 /**
  * This is a simple documentation
@@ -44,21 +43,22 @@ public class Advanced_Ch2_Lec2_tags_of_methods {
     }
 
     /**
-     * @deprecated The method of Date class is Deprecated
-     * <br>
-     * Please use another methods of Date class
+     * @deprecated The method is deprecated
      */
 
-    Date d = new Date();
+    // This method is deprecated by me to just generate Java Docs & perform deprecated tag of method
+
+    public static int Mul(int a, int b){
+        return a*b;
+    }
 
     public static void main(String[] args) throws Exception{
+
         System.out.println("Creating my own Java Documentation(Java Docs)");
 
         System.out.println("Addition : " + Add(2,5));
         System.out.println("Division : " + Divide(55,5));
-
-        Date d = new Date();
-        System.out.println(d.getHours());
+        System.out.println("Multiplication is : " + Mul(1,4));
 
     }
 }
