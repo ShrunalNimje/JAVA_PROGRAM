@@ -6,6 +6,11 @@ interface MyInterface{
 //    public void meth2();
 }
 
+@FunctionalInterface
+interface MyInterface1{
+    public void meth3(int a, int b);
+}
+
 //class MyClass1 implements MyInterface{
 //    public void meth(){
 //        System.out.println("I am  meth");
@@ -59,6 +64,11 @@ public class Advanced_Ch2_Lec4_Anonymous_Lambda {
             System.out.println("Hii, This is meth1 by using lambda expression ");
         };
         mi1.meth1();
+
+        MyInterface1 mi11 = (x,y)->{
+            System.out.println("Hii, this is meth3 by using lambda expression \n"+ x*y);
+        };
+        mi11.meth3(34,67);
 
     }
 }
