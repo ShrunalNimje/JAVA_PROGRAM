@@ -37,7 +37,7 @@ public class Advanced_Ch1_Lec1_ArrayList {
 
         // AI.clear(); ---> clear all the elements of an ArrayList...
 
-        // set an element at specific index
+        // set() method is to change an already existing element of ArrayList
         AI2.set(2,234);
         System.out.println("After set an element 234 at index 2 is of ArrayList 2 : " + AI2);
 

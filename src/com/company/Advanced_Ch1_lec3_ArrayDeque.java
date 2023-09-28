@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.ArrayDeque;
 
 public class Advanced_Ch1_lec3_ArrayDeque {
@@ -54,5 +55,6 @@ public class Advanced_Ch1_lec3_ArrayDeque {
         ArrayDeque is used for insertion & deletion of Queue from first and last...
         There are no capacity restrictions for ArrayDeque, and it provides us the facility to add or remove any element from both sides of the queue
          */
+
     }
 }
