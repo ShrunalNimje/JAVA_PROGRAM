@@ -7,15 +7,8 @@ class Game {
     public int userNum;
     public int noOfGuesses = 0;
 
-    public int getNoOfGuesses() {
-        return noOfGuesses;
-    }
-
-    public void setNoOfGuesses(int noOfGuesses) {
-        this.noOfGuesses = noOfGuesses;
-    }
-
-    public Game(){                                     // Constructor
+    // Constructor
+    public Game(){
         Random r = new Random();
         randomNum = r.nextInt(0,100);
     }
@@ -25,8 +18,10 @@ class Game {
         System.out.print("Enter your number:");
         userNum = sc.nextInt();
     }
+
     public boolean isCorrect(){
         noOfGuesses++;
+
         if (userNum==randomNum){
             System.out.printf("Your entered number is %d same as random number and you found it in %d attempts\n",userNum,noOfGuesses);
             return true;
@@ -37,11 +32,11 @@ class Game {
         }
         else {
             System.out.println("Too low number take another chance...");
+            return false;
         }
-        return false;
     }
-
 }
+
 public class EX3 {
     public static void main(String[] args) {
 
@@ -60,6 +55,5 @@ public class EX3 {
             gm.userInput();
             bl = gm.isCorrect();
         }
-
     }
 }

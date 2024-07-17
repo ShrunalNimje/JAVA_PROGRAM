@@ -1,14 +1,19 @@
 package com.company;
+
 class Library1{
+
     String [] books = new String[100];
     int noOfBooks = 0;
+
     public void addBooks(String a){
        books[noOfBooks]= a;
         System.out.println(a+" Book added to library successfully");
         noOfBooks++;
     }
+
     public void showAvailableBooks(){
         System.out.println("Available books are:");
+
         for (String a:books){
             if (a==null){
                 continue;
@@ -16,6 +21,7 @@ class Library1{
             System.out.println(a);
         }
     }
+
     public void issueBooks(String b){
         for (int i = 0;i<books.length;i++){
             if (books[i] == b){

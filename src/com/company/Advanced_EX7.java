@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class AddBooks{
+
     public String addBooks(String name, String author){
         LocalDateTime ldt = LocalDateTime.now();
         System.out.println("You have been successfully added book at this date & time : "+ ldt);
@@ -13,6 +14,7 @@ class AddBooks{
 }
 
 class IssueBooks{
+
     public String issueBooks(String name, String author){
         LocalDateTime ldt = LocalDateTime.now();
         System.out.println("You have been successfully issued book at this date & time : "+ ldt);
@@ -21,6 +23,7 @@ class IssueBooks{
 }
 
 class ReturnBook{
+
     public String returnBooks(String name, String author){
         LocalDateTime ldt = LocalDateTime.now();
         System.out.println("You have been successfully return book at this date & time : "+ ldt);
@@ -66,11 +69,13 @@ public class Advanced_EX7 {
         System.out.println("Only this books are available to issue from Library0012...");
 
         Boolean b1 = true;
+
         while (b1){
             System.out.println("Please enter : 1.Add books \n 2.Issue book \n 3.Return issued book");
             System.out.print("Please Enter your choice : ");
             Scanner sc2 = new Scanner(System.in);
             int Choice = sc2.nextInt();
+
             switch (Choice){
                 case 1 :
                     AddBooks ab =new AddBooks();
@@ -85,7 +90,6 @@ public class Advanced_EX7 {
                     System.out.println( ib.issueBooks("Marathi","Av"));
                     System.out.println( ib.issueBooks("Social Science","SoSci"));
                     System.out.println( ib.issueBooks("Geography","Geo"));
-
                     break;
                 case 3 :
                     ReturnBook rb =new ReturnBook();
@@ -97,8 +101,6 @@ public class Advanced_EX7 {
                     System.out.println("Your entered choice is incorrect \n You are not able to Add, Issue & Return any of these...\n Thank You!");
                     b1 = false;
             }
-
         }
-
     }
 }
