@@ -82,6 +82,35 @@ public class Functional_Programming_01 {
                 forEach(System.out::println);
     }
 
+    public static void printSquareOfAllEvenFunctional(List<Integer> numbers){
+        System.out.println("Square of all even numbers : ");
+
+        numbers.stream().
+                filter(number -> number % 2 == 0).
+                map(num -> num * num).
+                forEach(System.out::println);
+    }
+
+    // Exercise 5 - print the cube of all odd numbers
+    public static void printCubeOfAllOddFunctional03(List<Integer> numbers){
+        System.out.println("Cube of all odd numbers : ");
+
+        numbers.stream().
+                filter(number -> number % 2 != 0).
+                map(num -> num * num * num).
+                forEach(System.out::println);
+    }
+
+    // Exercise 6 - Print the number of characters in each course name
+    public static void printLengthOfAllCoursesFunctional04(List<String> courses){
+        System.out.println("Length of each course : ");
+
+        courses.stream().
+                // map(String::length).
+                map(course -> course + " -> " + course.length()).
+                forEach(System.out::println);
+    }
+
     public static void main(String[] args) {
 
         List<Integer> numbers = List.of(12,1, 56, 78, 3, 2, 9, 12,8);
@@ -110,5 +139,17 @@ public class Functional_Programming_01 {
         // Exercise 4 - print courses whose name has at least 4 letters
         System.out.println();
         printAllCoursesFunctional02(courses);
+
+        System.out.println();
+        printSquareOfAllEvenFunctional(numbers);
+
+        // Exercise 5 - print the cube of all odd numbers
+        System.out.println();
+        printCubeOfAllOddFunctional03(numbers);
+
+        // Exercise 6 - Print the number of characters in each course name
+        System.out.println();
+        printLengthOfAllCoursesFunctional04(courses);
+
     }
 }
