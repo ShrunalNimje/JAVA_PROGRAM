@@ -1,26 +1,35 @@
 package com.company;
+
 class myNewEmployee{
+
     private int age;
     private String name;
     private int salary;
+
     public int getSalary() {
         return salary;
     }
+
     public void setSalary(int a) {
         this.salary = a;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int a) {
         this.age = a;
     }
+
     public void setName(String n) {
         this.name = n;
     }
+
     public String getName() {
         return name;
     }
+
     // constructor and constructor overloading
     public myNewEmployee(){
         // int age = 20;
@@ -31,12 +40,14 @@ class myNewEmployee{
         age = 20;
         salary = 3400;
     }
+
     public myNewEmployee(String n,int a){
         // System.out.println("The name is :"+ n);
         // System.out.println("The age is :"+ a);
         name = n;
         age = a;
     }
+
     public myNewEmployee(String n){
         // System.out.println("The name is :"+ n);
         // System.out.println("The age is 20");
@@ -48,8 +59,10 @@ class myNewEmployee{
         salary = s;
     }
 }
+
 public class Ch9_Lec2 {
     public static void main(String[] args) {
+
         myNewEmployee obj = new myNewEmployee(125000);
         System.out.println("The age is :"+ obj.getAge());
         System.out.println("The name is :"+ obj.getName());

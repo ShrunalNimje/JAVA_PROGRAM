@@ -1,21 +1,26 @@
 package com.company;
+
 // problem statement 6
 class circle{
-    float pi = 3.14f;
+    double pi = Math.PI;
     int radi;
-    public float area2(){
+
+    public double area2(){
         return pi*radi*radi;
     }
-    public float perimeter2(){
+
+    public double perimeter2(){
         return 2*pi*radi;
     }
 }
 
 // problem statement 5
 class Tommy{
+
     public void hit(){
         System.out.println("i am hitting enemy...");
     }
+
     public void fire(){
         System.out.println("I am firing bullet continue...");
     }
@@ -23,11 +28,14 @@ class Tommy{
 
 // problem statement 4
 class Rectangle{
+
     int l;
     int b;
+
     public int area1(){
         return l*b;
     }
+
     public int perimeter1(){
         return 2*(l+b);
     }
@@ -35,10 +43,13 @@ class Rectangle{
 
 // problem statement 3
 class square{
+
     int side;
+
     public int area(){
         return side*side;
     }
+
     public int perimeter(){
         return 4*side;
     }
@@ -46,14 +57,18 @@ class square{
 
 // problem statement 1
 class Employee{
+
     int salary1;
     String name;
+
     public int getSalary(){
         return salary1;
     }
+
     public String getName(){
         return name;
     }
+
     public void setName(String a){
         name = a;
     }
@@ -61,13 +76,16 @@ class Employee{
 
 // problem statement 2
 class cellPhone{
+
     public void ring(){
         System.out.println("Ringing...");
     }
+
     public void vibrate(){
         System.out.println("Vibrating...");
     }
 }
+
 public class Ch8_ps8 {
     public static void main(String[] args) {
         // practise set 8

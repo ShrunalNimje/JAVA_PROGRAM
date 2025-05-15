@@ -1,5 +1,7 @@
 package com.company;
+
 class newEmployee{
+
    private int age;
    private String name;
    private float radii;
@@ -35,10 +37,11 @@ class newEmployee{
     public void setName(String name) {
         this.name = name;
     }
-
 }
+
 public class Ch9_Lec1 {
     public static void main(String[] args) {
+
         newEmployee obj = new newEmployee();
 
         // The statement throws an error cause of private access amplifier
