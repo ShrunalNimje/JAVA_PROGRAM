@@ -18,15 +18,15 @@ public class Ch14_Lec3_specificException {
             System.out.println("The division is :"+marks[ind]/num);
         }
         catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("ArrayIndexOutOfBoundsException occured");
+            System.out.println("ArrayIndexOutOfBoundsException occurred");
             System.out.println(e);
         }
         catch (ArithmeticException e){
-            System.out.println("ArithmeticException occured");
+            System.out.println("ArithmeticException occurred");
             System.out.println(e);
         }
         catch (Exception e){
-            System.out.println("Some other exception occured");
+            System.out.println("Some other exception occurred");
             System.out.println(e);
         }
 

@@ -6,13 +6,13 @@ public class Ch14_Lec2_try_catch {
         int b = 0;
 
         // Without try catch block
-//        int c = a/b;
-//        System.out.println("division is :"+c);
+        int c = a/b;
+        System.out.println("division is :"+c);
 
         // With try catch block
         try {
-            int c = a/b;
-            System.out.println("division is :"+c);
+            int c1 = a/b;
+            System.out.println("division is :"+c1);
         }
         catch (Exception e){
             System.out.println("Sorry , There is found an Exception. Reason:");

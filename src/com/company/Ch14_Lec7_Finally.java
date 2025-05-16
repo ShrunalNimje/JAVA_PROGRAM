@@ -1,6 +1,7 @@
 package com.company;
 
 public class Ch14_Lec7_Finally {
+
     public static int problem(){
         try {
             int a = 56;
@@ -11,24 +12,27 @@ public class Ch14_Lec7_Finally {
         catch (Exception e){
             System.out.println(e);
         }
+
         finally {
             System.out.println("This is Finally 1 statement..");
         }
         return 0;
 
     }
+
     public static void main(String[] args) {
-//        int a = 56;
-//        int b = 0;
-//        try {
-//            System.out.println(a/b);
-//        }
-//        catch (Exception e){
-//            System.out.println(e);
-//        }
-//        finally {
-//            System.out.println("This is Finally statement...");
-//        }
+        int a = 56;
+        int b = 0;
+        try {
+            System.out.println(a/b);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+
+        finally {
+            System.out.println("This is Finally statement...");
+        }
         System.out.println(problem());
 
         int j = 7;
