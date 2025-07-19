@@ -4,9 +4,9 @@ import java.util.*;
 public class Advanced_Ch1_Lec1_ArrayList {
     public static void main(String[] args) {
 
-        ArrayList<Integer> AI = new ArrayList<>();
+        List<Integer> AI = new ArrayList<>();
         // We can simply take capacity of ArrayList
-        ArrayList<Integer> AI2 = new ArrayList<>(2);
+        List<Integer> AI2 = new ArrayList<>(2);
         // Adding an element
         AI.add(3);
         AI.add(4);
@@ -26,14 +26,29 @@ public class Advanced_Ch1_Lec1_ArrayList {
         AI.addAll(2,AI2);
         System.out.println("After adding elements of ArrayList 2 is : " + AI);
 
+        // First method to print ArrayList...
+        for (int i = 0; i < AI.size(); i++) {
+            System.out.println("Using For loop : " + AI.get(i));
+        }
+
         // Second method to print ArrayList...
         for (Integer e: AI){
             System.out.println(e);
         }
 
+        // third method to print ArrayList...
+        Iterator<Integer> it1 = AI.iterator();
+
+        while(it1.hasNext()) {
+            System.out.println(it1.next());
+        }
+
         // Removing an element
         AI.remove(4);
         System.out.println("After removing an element from index 4 is : " + AI);
+
+        AI.remove(Integer.valueOf(12));
+        System.out.println("After removing an  30 value : " + AI);
 
         // AI.clear(); ---> clear all the elements of an ArrayList...
 

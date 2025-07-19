@@ -57,5 +57,86 @@ public class Advanced_Ch1_Lec2_LinkedList {
                 Use ArrayList when you want to access the random elements frequently, as it can’t be done in a linked list in constant time.
          */
 
+        // Implementing linked list through queue interface
+        Queue<Integer> queue = new LinkedList<>();
+
+        // Adding element to linked list from rear
+        queue.offer(12);
+        queue.offer(22);
+        queue.offer(32);
+
+        System.out.println("LinkedList : " + queue);
+
+        // Remove element to linked list from front
+        System.out.println(queue.poll());
+        System.out.println("LinkedList : " + queue);
+
+        // Get top element
+        System.out.println("Top element : " + queue.peek());
+        System.out.println("LinkedList : " + queue);
+
+        // there are also three methods add(), remove() and element() same as offer(), poll() and peek(),
+        // but they throw exception if task not completed as expected
+
+        // Implementing linked list through list interface
+        List<Integer> AI = new LinkedList<>();
+        List<Integer> AI2 = new LinkedList<>();
+        // Adding an element
+        AI.add(3);
+        AI.add(4);
+        AI.add(5);
+        AI.add(8);
+        AI2.add(12);
+        AI2.add(14);
+        AI2.add(30);
+
+        // Adding an element at specific index
+        AI.add(3,3);
+
+        System.out.println("ArrayList 1 is : " + AI);
+        System.out.println("ArrayList 2 is : " + AI2);
+
+        // Adding all element of AI2 to AI
+        AI.addAll(2,AI2);
+        System.out.println("After adding elements of ArrayList 2 is : " + AI);
+
+        // First method to print ArrayList...
+        for (int i = 0; i < AI.size(); i++) {
+            System.out.println("Using For loop : " + AI.get(i));
+        }
+
+        // Second method to print ArrayList...
+        for (Integer e: AI){
+            System.out.println(e);
+        }
+
+        // third method to print ArrayList...
+        Iterator<Integer> it1 = AI.iterator();
+
+        while(it1.hasNext()) {
+            System.out.println(it1.next());
+        }
+
+        // Removing an element
+        AI.remove(4);
+        System.out.println("After removing an element from index 4 is : " + AI);
+
+        AI.remove(Integer.valueOf(12));
+        System.out.println("After removing an  30 value : " + AI);
+
+        // AI.clear(); ---> clear all the elements of an ArrayList...
+
+        // set() method is to change an already existing element of ArrayList
+        AI2.set(2,234);
+        System.out.println("After set an element 234 at index 2 is of ArrayList 2 : " + AI2);
+
+        // return true if elements contains
+        System.out.println("AI2 contains 45 : "+ AI2.contains(45));
+        System.out.println("AI2 contains 30 : "+ AI2.contains(30));
+
+        // tell us starting & last index of elements
+        System.out.println(AI.indexOf(3));
+        System.out.println(AI.lastIndexOf(3));
+
     }
 }
