@@ -1,11 +1,16 @@
 package com.company;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Advanced_Ch1_Lec4_HashSet {
     public static void main(String[] args) {
-        HashSet<Integer> Hs1 = new HashSet<>();
-        HashSet<Integer> Hs2 = new HashSet<>(30,0.75f);
+
+        // Set<Integer> Hs1 = new LinkedHashSet<>();
+        Set<Integer> Hs1 = new TreeSet<>();
+        Set<Integer> Hs2 = new HashSet<>(30,0.75f);
 
         // Adding an element
         Hs1.add(11);
