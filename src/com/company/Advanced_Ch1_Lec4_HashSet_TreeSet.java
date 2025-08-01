@@ -1,11 +1,10 @@
 package com.company;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Advanced_Ch1_Lec4_HashSet {
+public class Advanced_Ch1_Lec4_HashSet_TreeSet {
     public static void main(String[] args) {
 
         // Set<Integer> Hs1 = new LinkedHashSet<>();
