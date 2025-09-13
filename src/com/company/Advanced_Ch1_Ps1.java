@@ -24,7 +24,7 @@ public class Advanced_Ch1_Ps1 {
         al.add("Parvati");
         al.add("Shri Krishna");
 
-        for (Object e:al) {
+        for (String e : al) {
             System.out.println(e);
         }
 

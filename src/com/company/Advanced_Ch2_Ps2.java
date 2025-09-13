@@ -5,7 +5,7 @@ import java.io.FileWriter;
 @Deprecated
 class MyDeprecated{
     public void meth(){
-        System.out.println(" I am Meth");
+        System.out.println("I am Meth");
     }
 }
 
@@ -27,7 +27,7 @@ public class Advanced_Ch2_Ps2 {
         MyInt mi = new MyInt() {
             @Override
             public void Int() {
-                System.out.println("i am Int of anonymous class");
+                System.out.println("I am Int of anonymous class");
             }
         };
         mi.Int();

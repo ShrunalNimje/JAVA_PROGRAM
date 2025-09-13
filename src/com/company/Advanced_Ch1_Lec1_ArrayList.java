@@ -5,8 +5,10 @@ public class Advanced_Ch1_Lec1_ArrayList {
     public static void main(String[] args) {
 
         List<Integer> AI = new ArrayList<>();
+
         // We can simply take capacity of ArrayList
         List<Integer> AI2 = new ArrayList<>(2);
+
         // Adding an element
         AI.add(3);
         AI.add(4);
@@ -48,7 +50,7 @@ public class Advanced_Ch1_Lec1_ArrayList {
         System.out.println("After removing an element from index 4 is : " + AI);
 
         AI.remove(Integer.valueOf(12));
-        System.out.println("After removing an  30 value : " + AI);
+        System.out.println("After removing 12 value : " + AI);
 
         // AI.clear(); ---> clear all the elements of an ArrayList...
 

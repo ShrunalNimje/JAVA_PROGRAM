@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Advanced_Ch1_Lec5_DateTime {
     public static void main(String[] args) {
+
         System.out.println("Milliseconds passed since 1 Jan 1970 : " + System.currentTimeMillis());
         System.out.println("Seconds passed since 1 Jan 1970 : " + System.currentTimeMillis()/1000);
         // System.out.println("Minutes passed since 1 Jan 1970 : " + System.currentTimeMillis()/1000/60);

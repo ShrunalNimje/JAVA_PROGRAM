@@ -6,10 +6,12 @@ interface MyNewInterface{
 }
 
 class MyPhone extends Phone2{
+
     @Override
     public void On(){
         System.out.println("Switch On");
     }
+
     @Deprecated
     public void Subtract(int a, int b){
         System.out.println(a-b);

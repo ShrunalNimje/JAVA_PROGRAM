@@ -20,14 +20,14 @@ public class Advanced_Ch1_Lec11_PriorityQueue {
         pq.offer(22);
         pq.offer(32);
 
-        System.out.println("LinkedList : " + pq);
+        System.out.println("PriorityQueue : " + pq);
 
-        // Remove element to linked list from front
+        // Remove element to PriorityQueue from front
         System.out.println(pq.poll());
-        System.out.println("LinkedList : " + pq);
+        System.out.println("PriorityQueue : " + pq);
 
         // Get top element
         System.out.println("Top element : " + pq.peek());
-        System.out.println("LinkedList : " + pq);
+        System.out.println("PriorityQueue : " + pq);
     }
 }

@@ -7,7 +7,9 @@ import java.util.TimeZone;
 
 public class Advanced_Ch1_Lec7_Gregorian {
     public static void main(String[] args) {
+
         GregorianCalendar gc = new GregorianCalendar();
+
         System.out.println(gc.getTime());
         System.out.println("HashCode of this Calendar is : " + gc.hashCode());
         System.out.println("Current date is : "+ gc.get(Calendar.DATE)+"/"+gc.get(Calendar.MONTH)+"/"+gc.get(Calendar.YEAR));

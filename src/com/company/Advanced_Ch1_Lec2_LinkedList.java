@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Advanced_Ch1_Lec2_LinkedList {
     public static void main(String[] args) {
+
         LinkedList<Integer> ll1 = new LinkedList<>();
         LinkedList<Integer> ll2 = new LinkedList<>();
 

@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 
 public class Advanced_Ch1_lec3_ArrayDeque {
     public static void main(String[] args) {
+
         ArrayDeque<Integer> Ad1 = new ArrayDeque<>();
         ArrayDeque<Integer> Ad2 = new ArrayDeque<>();
 

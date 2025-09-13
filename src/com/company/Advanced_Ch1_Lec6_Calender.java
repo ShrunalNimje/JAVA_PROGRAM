@@ -3,6 +3,7 @@ import java.util.Calendar;
 
 public class Advanced_Ch1_Lec6_Calender {
     public static void main(String[] args) {
+
         Calendar c = Calendar.getInstance();
 
         System.out.println("Available types of Calendar are : " + Calendar.getAvailableCalendarTypes());
