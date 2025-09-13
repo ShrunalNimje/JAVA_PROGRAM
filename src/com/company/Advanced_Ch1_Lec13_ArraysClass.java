@@ -15,5 +15,16 @@ public class Advanced_Ch1_Lec13_ArraysClass {
 
         Arrays.fill(arr, 2);
         System.out.println(Arrays.toString(arr));
-    }
+
+        // Parallel soring using Arrays class
+        int [] newArr = {2, 4, 6, 3, 45, 2, 6, 4, 8, 34, 3, 23, 6, 7, 82, 45, 62, 32, 22, 12, 95, 47, 6};
+//        Arrays.parallelSort(newArr);
+//        for (int e : newArr) {
+//            System.out.println(e);
+//        }
+
+        Arrays.parallelSort(newArr, 2, 8);
+        for (int e : newArr) {
+            System.out.println(e);
+        }    }
 }
