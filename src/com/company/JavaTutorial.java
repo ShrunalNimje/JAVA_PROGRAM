@@ -1,3 +1,5 @@
+package com.company;
+
 public class JavaTutorial {
     public static void main(String[] args) {
         // Just for practice purpose

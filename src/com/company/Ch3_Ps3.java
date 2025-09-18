@@ -1,3 +1,5 @@
+package com.company;
+
 public class Ch3_Ps3 {
     public static void main(String[] args) {
 
