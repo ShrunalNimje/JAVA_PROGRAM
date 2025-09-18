@@ -3,6 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 class Game {
+
     public int randomNum;
     public int userNum;
     public int noOfGuesses = 0;
@@ -23,7 +24,7 @@ class Game {
         noOfGuesses++;
 
         if (userNum==randomNum){
-            System.out.printf("Your entered number is %d same as random number and you found it in %d attempts\n",userNum,noOfGuesses);
+            System.out.printf("Your entered number is %d same as random number and you found it in %d attempts\n", userNum, noOfGuesses);
             return true;
         }
         else if(userNum>randomNum){

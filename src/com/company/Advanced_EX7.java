@@ -63,12 +63,12 @@ public class Advanced_EX7 {
         al.add("General Knowledge -- GK");
         al.add("Mathematics -- Math");
 
-        for (Object e:al) {
+        for (String e : al) {
             System.out.println(e);
         }
         System.out.println("Only this books are available to issue from Library0012...");
 
-        Boolean b1 = true;
+        boolean b1 = true;
 
         while (b1){
             System.out.println("Please enter : 1.Add books \n 2.Issue book \n 3.Return issued book");

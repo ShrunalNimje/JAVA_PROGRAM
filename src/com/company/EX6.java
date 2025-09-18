@@ -1,16 +1,14 @@
 package com.company;
 
 class InvalidIpException extends Exception{
-
     public String toString(){
         return "Entered input is invalid \n Please check before proceed...";
     }
 }
 
 class ZeroIpException extends Exception{
-
     public String toString(){
-        return "You cannot divide by 0(Zero)\n Please check before proceed...";
+        return "You cannot divide by 0\n Please check before proceed...";
     }
 }
 
@@ -22,7 +20,7 @@ class MaxMultiplierException extends Exception{
 
 class MaxIpException extends Exception{
     public String toString(){
-        return "You cannot get number greater than 1,00,000 \n Please check before proceed...";
+        return "You cannot get number greater than 100000 \n Please check before proceed...";
     }
 }
 

@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Ex2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter 0 for Stone , 1 for Paper , 2 for Scissor ");
 
         int computerChoice = 0;
@@ -21,7 +21,6 @@ public class Ex2 {
 
             Random rd = new Random();
             computerChoice = rd.nextInt(3);
-
             System.out.println("Computer choice : "+ computerChoice);
 
             if (userChoice==computerChoice){
